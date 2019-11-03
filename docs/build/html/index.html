@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to gufo’s documentation! &#8212; gufo  documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">gufo  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to gufo’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-gufo-s-documentation">
+<h1>Welcome to gufo’s documentation!<a class="headerlink" href="#welcome-to-gufo-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-window.window"></span><p>windows module</p>
+<p>A module to design a gui for entering simple data.</p>
+<dl class="class">
+<dt id="window.window.Window">
+<em class="property">class </em><code class="sig-prename descclassname">window.window.</code><code class="sig-name descname">Window</code><a class="headerlink" href="#window.window.Window" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that represents a general window of the graphical
+interface.</p>
+<dl class="simple">
+<dt>self.frames<span class="classifier">list</span></dt><dd><p>A list of frames from top to bottom.</p>
+</dd>
+<dt>self.fields<span class="classifier">dict</span></dt><dd><p>A dict of the fields to read.</p>
+</dd>
+<dt>self.checks<span class="classifier">dict</span></dt><dd><p>A dict of the checks to read.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="window.window.Window.add_button">
+<code class="sig-name descname">add_button</code><span class="sig-paren">(</span><em class="sig-param">frame</em>, <em class="sig-param">text</em>, <em class="sig-param">command</em><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.add_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a button to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the label.</p>
+</dd>
+<dt>text<span class="classifier">string</span></dt><dd><p>The message to display on the button.</p>
+</dd>
+<dt>command<span class="classifier">string</span></dt><dd><p>The method to be executed when the button is pressed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.add_checkbutton">
+<code class="sig-name descname">add_checkbutton</code><span class="sig-paren">(</span><em class="sig-param">frame</em>, <em class="sig-param">row</em>, <em class="sig-param">column</em>, <em class="sig-param">field</em><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.add_checkbutton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a checkbutton to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the checkbutton.</p>
+</dd>
+<dt>row<span class="classifier">int</span></dt><dd><p>The row for the checkbutton.</p>
+</dd>
+<dt>column<span class="classifier">int</span></dt><dd><p>The column for the checkbutton.</p>
+</dd>
+<dt>field<span class="classifier">string</span></dt><dd><p>The message to display next to the checkbutton field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.add_entry">
+<code class="sig-name descname">add_entry</code><span class="sig-paren">(</span><em class="sig-param">frame</em>, <em class="sig-param">row</em>, <em class="sig-param">field</em><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.add_entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an entry to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the entry.</p>
+</dd>
+<dt>row<span class="classifier">int</span></dt><dd><p>The row for the entry.</p>
+</dd>
+<dt>field<span class="classifier">string</span></dt><dd><p>The message to display next to the entry field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.add_frame">
+<code class="sig-name descname">add_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.add_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the frame for the window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the data in the window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.set_label">
+<code class="sig-name descname">set_label</code><span class="sig-paren">(</span><em class="sig-param">frame</em>, <em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.set_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets a label for the window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.window.Window.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.window.Window.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the window.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-window.application"></span><p>application module</p>
+<p>A module that contains the windows required in a program that manages
+job applications.</p>
+<dl class="class">
+<dt id="window.application.WindowChoice">
+<em class="property">class </em><code class="sig-prename descclassname">window.application.</code><code class="sig-name descname">WindowChoice</code><a class="headerlink" href="#window.application.WindowChoice" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that represents a window with a choice of the graphical
+interface.</p>
+<dl class="method">
+<dt id="window.application.WindowChoice.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowChoice.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves to the load window and destroys the choice window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.application.WindowChoice.make_window">
+<code class="sig-name descname">make_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowChoice.make_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes all the methods required to make the window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.application.WindowChoice.new">
+<code class="sig-name descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowChoice.new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves to the new window and destroys the choice window.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="window.application.WindowLoad">
+<em class="property">class </em><code class="sig-prename descclassname">window.application.</code><code class="sig-name descname">WindowLoad</code><a class="headerlink" href="#window.application.WindowLoad" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that represents a window to load another object from the
+graphical interface.</p>
+<dl class="method">
+<dt id="window.application.WindowLoad.make_window">
+<code class="sig-name descname">make_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowLoad.make_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes all the methods required to make the window.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="window.application.WindowNew">
+<em class="property">class </em><code class="sig-prename descclassname">window.application.</code><code class="sig-name descname">WindowNew</code><a class="headerlink" href="#window.application.WindowNew" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that represents a window to create another object from the
+graphical interface.</p>
+<dl class="method">
+<dt id="window.application.WindowNew.add_contact">
+<code class="sig-name descname">add_contact</code><span class="sig-paren">(</span><em class="sig-param">frame</em><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowNew.add_contact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the contact section to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the checkbutton.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.application.WindowNew.add_documents">
+<code class="sig-name descname">add_documents</code><span class="sig-paren">(</span><em class="sig-param">frame</em><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowNew.add_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the documents section to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the checkbutton.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.application.WindowNew.add_position">
+<code class="sig-name descname">add_position</code><span class="sig-paren">(</span><em class="sig-param">frame</em><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowNew.add_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the position section to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the checkbutton.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.application.WindowNew.make_window">
+<code class="sig-name descname">make_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.application.WindowNew.make_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes all the methods required to make the window.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-window.german"></span><p>german module</p>
+<p>A module that contains the windows required in a program that manages
+german verbs.</p>
+<dl class="class">
+<dt id="window.german.WindowVerb">
+<em class="property">class </em><code class="sig-prename descclassname">window.german.</code><code class="sig-name descname">WindowVerb</code><a class="headerlink" href="#window.german.WindowVerb" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that represents a window to create another object from the
+graphical interface.</p>
+<dl class="method">
+<dt id="window.german.WindowVerb.add_verb">
+<code class="sig-name descname">add_verb</code><span class="sig-paren">(</span><em class="sig-param">frame</em><span class="sig-paren">)</span><a class="headerlink" href="#window.german.WindowVerb.add_verb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the verb fields to the window.</p>
+<dl class="simple">
+<dt>frame<span class="classifier">tkinter.Frame</span></dt><dd><p>The frame to which you want to add the checkbutton.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="window.german.WindowVerb.make_window">
+<code class="sig-name descname">make_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#window.german.WindowVerb.make_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes all the methods required to make the window.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">gufo  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Giovanni Saccarola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>
