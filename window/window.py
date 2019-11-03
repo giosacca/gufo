@@ -14,6 +14,8 @@ class Window(tk.Tk):
     ----------
     self.frames : list
         A list of frames from top to bottom.
+    self.buttons : dict
+        A dict of the bottons of the window.
     self.fields : dict
         A dict of the fields to read.
     self.checks : dict
@@ -25,6 +27,7 @@ class Window(tk.Tk):
         tk.Tk.__init__(self)
 
         self.frames = []
+        self.buttons = {}
         self.fields = {}
         self.checks = {}
 
@@ -61,14 +64,14 @@ class Window(tk.Tk):
             The method to be executed when the button is pressed.
         """
 
-        self.button = tk.Button(
+        self.buttons[text] = tk.Button(
             frame,
             text = text, 
             fg = 'black',
             command = command,
             width = 5,
         )
-        self.button.pack(side = tk.constants.LEFT)
+        self.buttons[text].pack(side = tk.constants.LEFT)
 
     def show(self):
         """
